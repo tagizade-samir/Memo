@@ -63,3 +63,4 @@ _editorconfig
 .gitattributes
 .watchmanconfig
 yarn.lock
+.vscode/

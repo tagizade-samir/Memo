@@ -1,0 +1,23 @@
+import React from 'react';
+import Svg, { Path } from 'react-native-svg';
+
+interface MenuIconProps {
+    color?: string;
+    width?: number;
+    height?: number;
+}
+
+const MenuIcon: React.FC<MenuIconProps> = ({ width, height, color }) => {
+    return (
+        <Svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={width || 35}
+            height={height || 35}
+            viewBox="0 -21 384 384"
+        >
+            <Path fill={color || '#fff'} d="M362.668 0H21.332C9.578 0 0 9.578 0 21.332V64c0 11.754 9.578 21.332 21.332 21.332h341.336C374.422 85.332 384 75.754 384 64V21.332C384 9.578 374.422 0 362.668 0zm0 0M362.668 128H21.332C9.578 128 0 137.578 0 149.332V192c0 11.754 9.578 21.332 21.332 21.332h341.336c11.754 0 21.332-9.578 21.332-21.332v-42.668c0-11.754-9.578-21.332-21.332-21.332zm0 0M362.668 256H21.332C9.578 256 0 265.578 0 277.332V320c0 11.754 9.578 21.332 21.332 21.332h341.336c11.754 0 21.332-9.578 21.332-21.332v-42.668c0-11.754-9.578-21.332-21.332-21.332zm0 0"></Path>
+        </Svg>
+    );
+};
+
+export default MenuIcon;
